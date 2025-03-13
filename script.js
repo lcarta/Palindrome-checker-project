@@ -12,7 +12,7 @@ let isOpenExplain = false;
 
 
 const isInvalidInput = (text) => {
-  const regex = (/[\w]/g);
+  const regex = (/[A-Za-z0-9]/g);
   return text.toLowerCase().match(regex);
 }
 

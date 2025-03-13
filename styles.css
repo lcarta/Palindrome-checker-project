@@ -141,6 +141,9 @@ h1 {
 }
 
 @media only screen and (max-width:400px) {
+  main {
+    width: 95%;
+  }
 
   h1 {
     font-size: 1.5em

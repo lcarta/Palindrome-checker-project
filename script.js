@@ -9,9 +9,11 @@ let isOpenExplain = false;
 
 //start string control
 
+
+
 const isInvalidInput = (text) => {
-  const regex = /[/\w/i]/g;
-  return text.match(regex);
+  const regex = (/[\w]/g);
+  return text.toLowerCase().match(regex);
 }
 
 //end string control
@@ -21,6 +23,7 @@ const isInvalidInput = (text) => {
 
 const palindromeChecker = () => {
   const textInputArray = isInvalidInput(textInput.value);
+  console.log(textInputArray);
   const revTextArray = [...textInputArray].reverse();
   textInputArray.join("") === revTextArray.join("") ? resultBox.style.backgroundColor = "var(--result-background-color-palindrome)" : resultBox.style.backgroundColor = "var(--result-background-color-not-palindrome)"
   return textInputArray.join("") === revTextArray.join("") ? `"${textInput.value}" is a palindrome` : `"${textInput.value}" is not a palindrome`;

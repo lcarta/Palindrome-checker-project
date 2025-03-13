@@ -9,7 +9,7 @@
   --background-color-dark: #3a506b;
   --explain-box-background-dark: #4C698C;
   --color-text-light: #eaeaea;
-  --result-background-color-palindrome: #31e000;
+  --result-background-color-palindrome: #269b06;
   --result-background-color-not-palindrome: #fe5d26;
 }
 
@@ -134,7 +134,7 @@ h1 {
   margin: 0 auto;
   overflow-wrap: break-word;
   text-align: center;
-  color: white;
+  color: black;
   font-weight: 700;
   font-family: OCR A Std, monospace;
 }

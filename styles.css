@@ -11,6 +11,7 @@
   --color-text-light: #eaeaea;
   --result-background-color-palindrome: #269b06;
   --result-background-color-not-palindrome: #fe5d26;
+  --accent-color: #EAC815;
 }
 
 
@@ -38,7 +39,7 @@ h1 {
   max-height: 240px;
   margin: 30px auto;
   padding: 10px;
-  border: 2px solid #EAC815;
+  border: 2px solid var(--accent-color);
   border-radius: 5px;
   text-wrap: wrap;
   overflow-wrap: break-word;
@@ -59,7 +60,7 @@ h1 {
 }
 
 #open-explain-icon {
-  color: #EAC815;
+  color: var(--accent-color);
   font-size: 1.2em;
   cursor: pointer;
 
@@ -82,7 +83,7 @@ h1 {
 
 #explain-anchor-text {
   display: block;
-  color: #EAC815;
+  color: var(--accent-color);
   margin-top: 15px;
   text-align: center;
 }
@@ -160,7 +161,7 @@ h1 {
   #open-explain-icon {
     width: 40px;
 
-    color: #EAC815;
+    color: var(--accent-color);
     font-size: 1.2em;
 
   }

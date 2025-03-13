@@ -7,12 +7,17 @@ const resultBox = document.getElementById('result-box');
 const resultText = document.getElementById('result');
 let isOpenExplain = false;
 
-
+//start string control
 
 const isInvalidInput = (text) => {
   const regex = /[/\w/i]/g;
   return text.match(regex);
 }
+
+//end string control
+
+
+//start function palindrome control
 
 const palindromeChecker = () => {
   const textInputArray = isInvalidInput(textInput.value);
@@ -33,6 +38,9 @@ const viewReturn = () => {
   }
 }
 
+//endfunction palindrome control
+
+
 //Start Function for open explain text
 const openExplain = () => {
   if (isOpenExplain) {
@@ -49,9 +57,6 @@ const openExplain = () => {
 
   }
 }
-
-
-
 //End Function for open explain text
 
 openIcon.addEventListener('click', openExplain);

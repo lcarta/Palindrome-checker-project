@@ -1,1 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
+:root {
+  --background-color-dark: #3a506b;
+  --explain-box-background-dark: #4C698C;
+  --color-text-light: #eaeaea;
+  --result-background-color-palindrome: #31e000;
+  --result-background-color-not-palindrome: #fe5d26;
+}
+
+
+body {
+  background-color: var(--background-color-dark);
+  color: var(--color-text-light);
+  font-family: OCR A Std, monospace;
+}
+
+main {
+  width: 80%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.box {
+  background-color: var(--explain-box-background-dark);
+  width: 95%;
+  margin: 30px auto;
+  padding: 10px;
+  border: 2px solid #EAC815;
+  border-radius: 5px;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  align-items: center;
+}
+
+
+#explain-box #explain-title,
+#explain-text {
+  text-align: center;
+}
+
+#explain-title {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4em;
+}
+
+#open-explain-icon {
+  color: #EAC815;
+  font-size: 1.2em;
+  cursor: pointer;
+
+}
+
+#open-explain-icon:hover {
+  box-shadow: #eac715b1 0px 10px 36px 0px, #eac71578 0px 0px 0px 2px;
+
+}
+
+#explain-text {
+  margin-top: 20px;
+  line-height: 25px;
+  display: none;
+}
+
+#explain-text .marker {
+  background-color: #96800e;
+}
+
+#explain-anchor-text {
+  display: block;
+  color: #EAC815;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#explain-anchor-text:hover {
+  box-shadow: #eac715b1 0px 10px 36px 0px, #eac71578 0px 0px 0px 2px;
+}
+
+#fieldset-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fieldset-input #text-input {
+  margin: 10px auto;
+  height: 20px;
+  width: 70%;
+  max-width: 170px;
+  border: 0 solid transparent;
+  border-radius: 5px;
+  box-shadow: #3a506b 5px 4px 20px 2px;
+  ;
+}
+
+#fieldset-input #check-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: linear-gradient(180deg, #f4ce11 10%, #7e6b0b 90%);
+  border: 1px solid #96800e;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1em;
+  font-family: OCR A Std, monospace;
+}
+
+
+#fieldset-input #check-btn:hover {
+  background: linear-gradient(180deg, #7e6b0b 10%, #f4ce11 90%);
+}
+
+#result-box {
+  display: none;
+  background-color: transparent;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-family: OCR A Std, monospace;
+}
+
+@media only screen and (max-width:400px) {
+
+  h1 {
+    font-size: 1.5em
+  }
+
+  #explain-title {
+    flex-direction: column;
+    font-size: 1.2em;
+  }
+
+  #open-explain-icon {
+    color: #EAC815;
+    font-size: 1.2em;
+
+  }
+
+  #explain-box h2,
+  #explain-text {
+    font-size: 1em;
+  }
+
+  #explain-text,
+  #fieldset-input label {
+    font-size: 0.8em;
+  }
+}

@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <title>Palindrome Checker</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h1>Palindrome Checker</h1>
+    <div id="explain-box" class="box">
+      <h2 id="explain-title">What's a palindrome ?
+        <span class="material-symbols-outlined" id="open-explain-icon">keyboard_double_arrow_down</span>
+      </h2>
+      <div id="explain-text">
+        <p>A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as
+          forwards, such as <span class="marker">madam</span> or <span class="marker">racecar</span>, the date "<span
+            class="marker">22/02/2022</span>" and the sentence: "<span class="marker">A man, a plan, a
+            canal – Panama</span>".
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Palindrome" id="explain-anchor-text" target="_blank">
+          Font:"https://en.wikipedia.org/wiki/Palindrome"
+        </a>
+      </div>
+    </div>
+
+    <fieldset for="palindrome-checker-input" id="fieldset-input" class="box">
+      <label for="palindrome-checker-input">Insert text or phrase to check</label>
+      <input type="text" id="text-input" value="">
+      <button type="button" id="check-btn">CHECK</button>
+    </fieldset>
+    <div id="result-box">
+      <p id="result"></p>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

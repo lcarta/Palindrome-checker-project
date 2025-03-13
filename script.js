@@ -1,4 +1,5 @@
 const checkButton = document.getElementById('check-btn');
+const explainBox = document.getElementById('explain-box');
 const explainText = document.getElementById('explain-text');
 const textInput = document.getElementById('text-input');
 const openIcon = document.getElementById('open-explain-icon');
@@ -38,11 +39,14 @@ const openExplain = () => {
     explainText.style.display = "none";
     isOpenExplain = false;
     openIcon.innerText = "keyboard_double_arrow_down";
+    explainBox.classList.remove('hidden-scroll');
   }
   else {
     explainText.style.display = "block";
     isOpenExplain = true;
     openIcon.innerText = "keyboard_double_arrow_up";
+    explainBox.classList.add('hidden-scroll');
+
   }
 }
 

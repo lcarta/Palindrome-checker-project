@@ -22,7 +22,7 @@ body {
 
 main {
   width: 80%;
-  max-width: 460px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -35,6 +35,7 @@ h1 {
 .box {
   background-color: var(--explain-box-background-dark);
   width: 95%;
+  max-height: 240px;
   margin: 30px auto;
   padding: 10px;
   border: 2px solid #EAC815;
@@ -42,6 +43,7 @@ h1 {
   text-wrap: wrap;
   overflow-wrap: break-word;
   align-items: center;
+
 }
 
 
@@ -143,12 +145,21 @@ h1 {
     font-size: 1.5em
   }
 
+  .hidden-scroll {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+
   #explain-title {
     flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
     font-size: 1.2em;
   }
 
   #open-explain-icon {
+    width: 40px;
+
     color: #EAC815;
     font-size: 1.2em;
 
